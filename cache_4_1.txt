@@ -1,3 +1,10 @@
 cache
 git remote add origin https://github.com/WangHq-PKU/2020-4-1-1.git
 git push -u origin master
+
+touch .git-credentials
+vim .git-credentials
+https://{username}:{password}@github.com
+
+
+if one can be deformed to the other through a family of closed smooth curves. Since the rotation index is an integer and varies continuously in the family, it must remain a constant
