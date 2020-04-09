@@ -2,3 +2,11 @@
 
 http://gabgoh.github.io/COVID/index.html
 Epidemic Calculator
+
+ω γ λ μ ξ 
+∞
+
+Python 在cmd中import模块成功，但是在jupyter notebook中No module xxx found
+
+conda install --yes --file requirements.txt
+
