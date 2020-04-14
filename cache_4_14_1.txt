@@ -13,3 +13,5 @@
 ∪
 
 some objects but all the morphisms between these objects
+
+motivation for sheaves, cohomology and higher stacks
