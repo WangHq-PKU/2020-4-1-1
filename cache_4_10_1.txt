@@ -1,0 +1,47 @@
+epopt, epcov = curve_fit(exponential, x, y, bounds=([0,0,-100],[100,0.9,100]), maxfev=10000)
+
+Analyze the growth of new cases to explain the pandemic trend
+
+Modeling the pandemic with exponential and logistic model
+
+Function f: Day t -> confirmed cases ℕ
+Compute new cases: f(t+1) – f(t), 
+
+(f(t+1)-f(t))-(f(t)-f(t-1))
+
+Can be used to see when the growth stabilize, when growth drops. (i.e. fewer new cases than previous day)
+
+•	Modeling the pandemic with exponential and logistic model.
+
+For simulation function f(x), compute ∑▒〖(𝑦_𝑖−𝑓(𝑥_𝑖))〗^2/(∑▒〖(𝑦_𝑖−𝑦 ̅)〗^2 ), if < 0.05, fit, otherwise don't fit. (we wish ∑▒〖(𝑦_𝑖−𝑓(𝑥_𝑖))〗^2  equal 0)
+
+•	compute the variation of different time span to analyze the pandemic trend.
+
+How many days it takes to double the cases.
+
+New cases and derivative are local property. Yet time of doubling the cases can manifest features of a longer time scale(ex: 7 days).
+
+We can see when efforts are taken to block the transmission, the time cost of doubling increases. (Italy: 3 days -> 7 days)
+
+If no serious efforts are taken, the cases would double every 5-7 days . 
+
+Changes of confirmed cases every n days.
+
+calculate f(x+n) – f(x).
+
+We choose n= 5, 7.
+
+We can clearly observe that all curves of new cases are going through a period of acceleration-stabilize-drop
+
+From variation of new cases, we can clearly see that pandemic in Italy starts to drop, in Spain stabilize. Yet in US and France it is still growing.
+
+For Italy, Spain and China, exponential curve don't fit. logistic curve fit.
+
+For US, France, exponential curve and logistic curve both fit.
+
+log(2)/(log(as.numeric(df_Italy[1, i])/(temp_1)))*temp_3
+
+We can observe that week growth of Italy and Spain starts to drop, yet week growth of US and France still increase.
+
+
+
